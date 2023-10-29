@@ -1,0 +1,7 @@
+ny_taxi_postgres_data/
+*.csv
+*.txt
+*.hcl
+*.tfstate
+*.exe
+*.backup

@@ -1,0 +1,34 @@
+- creer projet gcloud
+
+- telecharger et installer terraform
+
+- verifier emplacement python dans path : C:\ProgramData\anaconda3\python.exe
+    + mettre son contenu dans CLOUDSDK_PYTHON
+    + comme export CLOUDSDK_PYTHON=c/ProgramData/anaconda3/python
+
+- telecharger gcloud sdk from https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.zip
+
+unzip
+installer
+install.sh
+
+-mettre dans path aussi C:\Users\aissa\bin;C:\google-cloud-sdk\bin
+
+tester avec gcloud version
+
+- create a service account and generate keys
+
+generer 
+- export GOOGLE_APPLICATION_CREDENTIALS=~/awesome-terra-400116-66cc072ef2c9.json
+
+C:\Users\aissa\awesome-terra-400116-66cc072ef2c9.json
+
+- Now authenticate:
+
+gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS
+
+or
+
+gcloud auth application-default login
+
+terraform plan -var="project=awesome-terra-400116"

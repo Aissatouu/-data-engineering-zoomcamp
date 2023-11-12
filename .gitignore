@@ -5,3 +5,8 @@ ny_taxi_postgres_data/
 *.tfstate
 *.exe
 *.backup
+*.idea
+*.csv.gz
+*.parquet
+__pycache__/
+.env
